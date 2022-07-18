@@ -21,3 +21,14 @@
 '''
 
 #Write your function under here
+def valid_working_time(work_time,weekday,holiday):
+  work = False
+  if weekday:
+    if work_time >= 8 and work_time <= 12 and not holiday:
+      work = True
+  if not weekday:
+    if work_time >= 4 and work_time <= 6:
+      work = True
+  return work    
+  
+print(valid_working_time(10, True, True))

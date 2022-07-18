@@ -12,3 +12,10 @@
 '''
 
 #Write your function under here
+
+def more_positives(nums):
+    even = True
+    for num in nums:
+        if num%2 != 0:
+            even = False
+    return even

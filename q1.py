@@ -11,3 +11,10 @@
 '''
 
 #Write your function under here
+def duplicate_w(str):
+    
+    for i in range(len(str)+1):
+        if str[i] == 'w':
+            str = str[i]+str
+    return str          
+print(duplicate_w('worldw'))

@@ -11,3 +11,11 @@
 '''
 
 #Write your function under here
+def descending_list(n):
+    while n > 0:
+        print(n)
+        n-=1  
+        
+    
+    
+print(descending_list(8))        
